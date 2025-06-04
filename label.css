@@ -1,0 +1,146 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the overall page layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #f5a623, #ff6f61, #f5a623);
+    color: #fff;
+    height: 100vh;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    animation-delay: 4s;
+    animation: pro 4s ease-in infinite;
+}
+@keyframes pro{
+    50%{
+         background: linear-gradient(135deg, #08bfff, #9370db);
+    }
+    100%{
+   background: linear-gradient(135deg, #ff69b4, #ff8c00);;
+    }
+}
+
+/* Container for the form */
+h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Form styling */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="phone"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="phone"]:focus,
+textarea:focus {
+    border-color: #f5a623;
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin: 0 5px;
+}
+
+input[type="radio"]:checked {
+    background-color: #f5a623;
+    border-radius: 50%;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6f61;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f5a623;
+}
+
+/* Link styling */
+a {
+    color: #f5a623;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer (forgot password) styling */
+p {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

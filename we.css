@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.prog{
+    background-color: white;
+    height: 4px;
+    margin: 0px;
+    padding: 0px;
+    animation-name: prog;
+    animation-duration:1s;
+    animation-iteration-count:1s;   
+}
+@keyframes prog{
+    0%{
+        background-color: red;
+        width: 0px;
+    }
+    60%{
+        background-color: red;
+        width: 60vw;
+    }
+    100%{
+        background-color: red;
+        width: 100vw;
+    }
+}
+header{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 10;
+    display:flex;
+    background-color:yellow;
+}
+header b{
+    margin-left: 16px;
+    color: blue;
+    font-size: 27px;
+}
+header nav label input{
+    margin: 6px 86px;
+    width: 390px;
+}
+.i9{
+    position: relative;
+    display: flex;
+    bottom: 33px;
+    left: 802px;
+    z-index: 20;
+}
+.i9 img{
+    border: 4px inset grey;
+}
+
+video{
+    width: 100%;
+    height: 40%;
+    border:solid black 2px;
+}
+.i{
+    position: relative;
+    right: -10px;
+    cursor: pointer;
+    border: 2px solid grey;
+    border-radius: 4px;
+    transition-property: background width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.i:hover{
+    background-color:silver;
+    width: 54px;
+}
+button {
+    border: none; /* Removes border */
+    background: none; /* Removes background */
+    cursor: pointer; /* Changes cursor to pointer */
+    padding: 0; /* Removes default padding */
+}
+button img {
+    vertical-align: middle; /* Ensures the image is vertically centered */
+    width: 30px; /* Ensures consistent image size */
+}
+.img1{
+    margin-top: 1px;
+    position:relative;
+    right: -141px;
+}
+.img2{
+    margin-top: 3px;
+    position:relative;
+    right: -24px;
+    top: 0px;
+}
+.ec1{
+    display: inline-block;
+}
+
+.elec1 u,i{
+align-items: center;
+justify-content: center;
+}
+.elec1 button{
+    background-color: #e9dcdc;
+  border: inset #ededed 3px;
+}
+footer{
+    display: flex;
+    text-align: center;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+footer big a{
+    margin: 0px 12px;
+    text-decoration: none;
+    color: white;
+}
+body{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+footer a img{
+    position: fixed;
+    bottom: 3px;
+    right: 0px;
+}
